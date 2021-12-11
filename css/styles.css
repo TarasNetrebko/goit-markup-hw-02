@@ -1,0 +1,108 @@
+/* 
+    основной цвет текста #757575
+    вторичный цвет текста #212121
+    акцент #2196F3 
+    основной цвет логотипа #000000
+    основной бекграунд #FFFFFF
+    вторичный бекграунд #F5F4FA
+    бекграунд акцент #2F303A 
+    специальный цвет некоторых елементов текста  rgba(255, 255, 255, 0.6)
+*/
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-main-color: #000000;
+  --white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2f303a;
+  --special-footer-text-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  background-color: var(--white-color);
+  color: var(--main-text-color);
+}
+.logo {
+  color: var(--logo-main-color);
+  cursor: pointer;
+}
+.logo-accent {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.list {
+  list-style: none;
+}
+
+/* BUTTONS SETTINGS */
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.btn-secondary {
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+}
+
+/* SITE NAV */
+
+.site-nav a {
+  color: var(--secondary-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+/* HERO */
+
+.hero-title {
+  color: var(--secondary-text-color);
+}
+.hero-button {
+  border-color: var(--accent-background-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+/* CONTACTS */
+
+.contacts-header {
+  color: var(--main-text-color);
+}
+.contacts-header:hover,
+.contacts-header:focus {
+  color: var(--accent-color);
+}
+.contacts-footer {
+  color: var(--special-footer-text-color);
+}
+.contacts-footer:hover,
+.contacts-footer:focus {
+  color: var(--accent-color);
+}
+
+/* SECTION */
+
+.section-title {
+  color: var(--secondary-text-color);
+}
+.list-title {
+  color: var(--secondary-text-color);
+}
+
+/* FILTER */
+.list-button {
+  border-color: var(--white-color);
+}
+.list-button:hover,
+.list-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
